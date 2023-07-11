@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-align: center;margin-top:20px">TO-DO APP</h1>
+    <div class="main">
+        <div class="ind">
+            <div class="f">
+                <div>
+                    <button id="c" style="color: green;">Completed : 0</button>
+                    <button id="l" style="color: red;">LeftOut : 0</button>
+                </div>
+                <input type="text" placeholder="Enter title" name="title" id="tit" required>
+                <textarea class="area" id="paragraph" name="paragraph" rows="4" cols="40" placeholder="Describe about your task Buddy...." required></textarea>
+
+                <button type="submit" value="s" name="sub"  id="b1" >Add to list</button>
+            </div>     
+        </div>
+        <div class="t">
+            <div class="t1">
+                <h3>Tasks To Be Done</h3>
+                <table id="table">
+                    <tr>
+                        <th style="width: 100px;">Title</th>
+                        <th style="width: 300px;">To-Do</th>
+                        <th>Actions</th>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="t2">
+                <h3> Completed Tasks</h3>
+                <table id="completedTable">
+                    <tr>
+                        <th style="width: 100px;">Title</th>
+                        <th style="width: 300px;">To-Do</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <p style="color: black;text-align: center;margin-top: 80px;font-size: 0.6rem;"> &copy;Mani Sai, All Rights Reserved </p> 
+     </footer>
+</body>
+</html>
